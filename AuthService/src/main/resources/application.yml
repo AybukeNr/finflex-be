@@ -1,0 +1,27 @@
+server:
+  port: 8080
+#postgres
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  threads:
+    virtual:
+      enabled: true
+
+jwt:
+  secretkey:
+  audience: finflexteamwois
+  issuer: wois
+kafka:
+  bootstrap-servers: localhost:9092
+  topics:
+    user:
+      register: send-register-mail
+      forgot-password: send-forgot-mail
