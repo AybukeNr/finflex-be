@@ -3,7 +3,7 @@
 
 FinFlex kurumsal bir döviz alım-satım uygulamasıdır.Arka taraf uygulaması Spring Boot frameworkünde Java diliyle yazılmıştır.
 Ön taraf uygulamasında React,JS frameworkünde   JavaScript dili kullanılarak yazılmıştır.
-Ayrıca Material UI ve Ant Design'dan yararlanılmıştır.
+Ayrıca Material UI ve Ant Design'dan yararlanılmıştır.İnfina Akademi stajında 5 kişilik ekiple geliştirilmiştir.
 
 
 ## Bilgisayarınızda Çalıştırın
