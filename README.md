@@ -15,7 +15,7 @@ git clone https://github.com/AybukeNr/finflex-be.git
 ```
 
 Projenin frontend uygulamasını klonlayın
-
+git clone https://github.com/AybukeNr/finflex-fe.git
 ```bash
 
 ```
