@@ -3,7 +3,7 @@
 
 FinFlex kurumsal bir döviz alım-satım uygulamasıdır.Arka taraf uygulaması Spring Boot frameworkünde Java diliyle yazılmıştır.
 Ön taraf uygulamasında React,JS frameworkünde   JavaScript dili kullanılarak yazılmıştır.
-Ayrıca Material UI ve Ant Design'dan yararlanılmıştır.
+Ayrıca Material UI ve Ant Design'dan yararlanılmıştır.İnfina Akademi stajında 5 kişilik ekiple geliştirilmiştir.
 
 
 ## Bilgisayarınızda Çalıştırın
@@ -11,13 +11,13 @@ Ayrıca Material UI ve Ant Design'dan yararlanılmıştır.
  Projenin backend uygulamasını klonlayın
 
 ```bash
-git clone https://gitea.infina.com.tr/akademi-24/FinFlex.git
+git clone https://github.com/AybukeNr/finflex-be.git
 ```
 
 Projenin frontend uygulamasını klonlayın
 
 ```bash
-git clone --branch origin https://gitea.infina.com.tr/akademi-24/FinFlex.git
+git clone https://github.com/AybukeNr/finflex-fe.git
 ```
 
 Kafka konfigürasyonu
