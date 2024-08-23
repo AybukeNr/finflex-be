@@ -103,12 +103,12 @@ class AuthServiceTest {
     @Test
     void testForgotPassword_Success() {
         ForgetPasswordRequest forgetPasswordRequest = new ForgetPasswordRequest();
-        forgetPasswordRequest.setMailAddress("aybukeenurcorapci0@gmail.com");
+        forgetPasswordRequest.setMailAddress("example@gmail.com");
 
         User mockUser = new User();
-        mockUser.setMailAddress("aybukeenurcorapci0@gmail.com");
+        mockUser.setMailAddress("example@gmail.com");
 
-        when(userRepository.findOptionalByMailAddress("aybukeenurcorapci0@gmail.com")).thenReturn(Optional.of(mockUser));
+        when(userRepository.findOptionalByMailAddress("example@gmail.com")).thenReturn(Optional.of(mockUser));
         when(tokenService.createToken(any(User.class), eq(TokenType.FORGOT_PASSWORD), anyInt())).thenReturn("mockToken");
 
         String result = authService.forgotPassword(forgetPasswordRequest);
@@ -119,7 +119,7 @@ class AuthServiceTest {
         verify(kafkaTemplate).send(eq("send-forgot-mail"), captor.capture());
 
         ForgotMailRequest mailRequest = captor.getValue();
-        assertEquals("aybukeenurcorapci0@gmail.com", mailRequest.getSentToMailAddress());
+        assertEquals("example@gmail.com", mailRequest.getSentToMailAddress());
         assertEquals("mockToken", mailRequest.getToken());
     }
 }
